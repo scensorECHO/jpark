@@ -31,15 +31,18 @@ class ThreadClass(threading.Thread):
 # def magicWord():
 # 	while 1:
 
+denied = 'access: PERMISSION DENIED'
+magicword = 'YOU DIDN\'T SAY THE MAGIC WORD!'
+
 print ('Jurassic Park, System Security Interface')
 print ('Version 4.0.5, Alpha E')
 print ('Ready')
 line = input('> ')
-print('access: PERMISSION DENIED')
+print(denied)
 line = input('> ')
-print('access: PERMISSION DENIED')
+print(denied)
 line = input('> ')
-print('access: PERMISSION DENIED', end="")
+print(denied, end="")
 time.sleep(1)
 print('.....and......')
 time.sleep(1)
@@ -48,7 +51,7 @@ t = ThreadClass()
 t.start()
 
 while 1:
-	print('YOU DIDN\'T SAY THE MAGIC WORD!')
+	print(magicword)
 	time.sleep(.2)
 		
 		
