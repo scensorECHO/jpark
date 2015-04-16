@@ -12,7 +12,7 @@ class ThreadClass(threading.Thread):
 			chunk = 1024  
 
 			#open a wav format music  
-			f = wave.open(r"/home/tom/Documents/magicwrd.wav","rb")  
+			f = wave.open(r"magicwrd.wav","rb")  
 			#instantiate PyAudio  
 			p = pyaudio.PyAudio()  
 			#open stream  
